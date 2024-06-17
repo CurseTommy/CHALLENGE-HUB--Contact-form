@@ -1,0 +1,166 @@
+main {
+	background-color: $white;
+	border-radius: 1rem;
+	margin: auto;
+	min-height: fit-content;
+	min-width: 95vw;
+	padding: 1rem;
+	position: relative;
+}
+
+section.contact-form {
+	max-width: 100%;
+	min-height: 100%;
+}
+
+.form-group {
+	margin-top: 1rem;
+	width: 100%;
+}
+
+.type-group {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+label::after {
+	color: $green-600-medium;
+	content: ' *';
+	display: inline;
+}
+
+input {
+	cursor: pointer;
+	padding-left: 1rem;
+}
+
+textarea {
+	padding: 1rem;
+	cursor: pointer;
+}
+
+// input.invalid,
+// textarea.invalid {
+// 	border-color: $red;
+// }
+
+// span[class^='error_'] {
+// 	width: 100%;
+// 	color: $red;
+// 	display: none;
+// }
+
+input:focus,
+textarea:focus {
+	outline: none !important;
+	border: 1px solid $green-600-medium;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+	min-height: 2.5rem;
+	min-width: 100%;
+	border-radius: 10px;
+}
+
+input[type='radio'] {
+	margin-right: 1rem;
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.radio {
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin-top: 1rem;
+	text-align: left;
+	padding: 0.7rem;
+	width: 100%;
+}
+
+.green-200-bgc {
+	background-color: $green-200-lighter;
+	border-color: $green-600-medium !important;
+	border-width: 1px !important;
+}
+
+input[type='button'] {
+	background-color: $green-600-medium;
+	color: $white;
+	border: none;
+	border-radius: 10px;
+	min-height: 2.5rem;
+	min-width: 100%;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+input[type='button']:hover {
+	background-color: $grey-900-darker;
+}
+
+input[type='checkbox'] {
+	margin-right: 1rem;
+	cursor: pointer;
+	height: 1rem;
+	width: 1rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+input[type='checkbox']:checked,
+input[type='radio']:checked {
+	accent-color: $green-600-medium;
+}
+
+.label-font {
+	font-size: 16px;
+}
+
+.message_sent {
+	display: none;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: -14%;
+	left: 0;
+	right: 0;
+	text-align: left;
+	background-color: $grey-900-darker;
+	color: $white;
+	border-radius: 1rem;
+	min-height: 4.5rem;
+	max-width: 60%;
+	padding: 1rem;
+
+	& h1 {
+		margin-left: 1.2rem;
+	}
+
+	& h1::before {
+		content: '';
+		position: absolute;
+		top: 20px;
+		left: 10px;
+		width: 100%;
+		height: 100%;
+		background-image: url('../../../assets/images/icon-success-check.svg');
+		background-repeat: no-repeat;
+	}
+
+	& p {
+		padding-top: 0.5rem;
+	}
+}
+
+.active {
+	display: block;
+}

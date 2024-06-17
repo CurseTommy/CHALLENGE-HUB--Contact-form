@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.title-contact h1 {
+  font-size: 34px;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  margin: auto;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  min-width: 95vw;
+  padding: 1rem;
+  position: relative;
+}
+
+section.contact-form {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.form-group {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.type-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+label::after {
+  color: hsl(169, 82%, 27%);
+  content: " *";
+  display: inline;
+}
+
+input {
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+textarea {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid hsl(169, 82%, 27%);
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  min-height: 2.5rem;
+  min-width: 100%;
+  border-radius: 10px;
+}
+
+input[type=radio] {
+  margin-right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.radio {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: left;
+  padding: 0.7rem;
+  width: 100%;
+}
+
+.green-200-bgc {
+  background-color: hsl(148, 38%, 91%);
+  border-color: hsl(169, 82%, 27%) !important;
+  border-width: 1px !important;
+}
+
+input[type=button] {
+  background-color: hsl(169, 82%, 27%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 10px;
+  min-height: 2.5rem;
+  min-width: 100%;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+input[type=button]:hover {
+  background-color: hsl(187, 24%, 22%);
+}
+
+input[type=checkbox] {
+  margin-right: 1rem;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+  accent-color: hsl(169, 82%, 27%);
+}
+
+.label-font {
+  font-size: 16px;
+}
+
+.message_sent {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: -14%;
+  left: 0;
+  right: 0;
+  text-align: left;
+  background-color: hsl(187, 24%, 22%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  min-height: 4.5rem;
+  max-width: 60%;
+  padding: 1rem;
+}
+.message_sent h1 {
+  margin-left: 1.2rem;
+}
+.message_sent h1::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/images/icon-success-check.svg");
+  background-repeat: no-repeat;
+}
+.message_sent p {
+  padding-top: 0.5rem;
+}
+
+.active {
+  display: block;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 0.6rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attributiona {
+  color: hsl(228, 45%, 44%);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    min-width: 50vw;
+  }
+  .type-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+  }
+}
+body {
+  background-color: hsl(148, 38%, 91%);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Remove default required message */
+input::-webkit-validation-bubble,
+textarea::-webkit-validation-bubble {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

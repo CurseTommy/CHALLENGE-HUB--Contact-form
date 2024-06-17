@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px) {
+	main {
+		min-width: 50vw;
+	}
+
+	.type-group {
+		flex-direction: row;
+		gap: 1rem;
+	}
+}

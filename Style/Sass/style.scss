@@ -1,0 +1,25 @@
+@import '_variables';
+@import '_reset';
+
+// Layout
+@import 'Layout/header';
+@import 'Layout/main';
+@import 'Layout/footer';
+@import '_responsiveness';
+
+body {
+	background-color: $green-200-lighter;
+	height: 100vh;
+	display: flex;
+	font-family: 'Karla', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	user-select: none;
+}
+
+/* Remove default required message */
+input::-webkit-validation-bubble,
+textarea::-webkit-validation-bubble {
+	display: none;
+}

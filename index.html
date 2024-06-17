@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="Style/css/style.css" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | Contact form</title>
+	</head>
+	<body>
+		<main>
+			<section class="message_sent">
+				<h1>Message Sent!</h1>
+				<p>Thanks for completing the form. We'll be in touch soon!</p>
+			</section>
+			<header>
+				<section class="title-contact">
+					<h1>Contact Us</h1>
+				</section>
+			</header>
+			<section class="contact-form">
+				<form>
+					<div class="type-group">
+						<div class="form-group">
+							<label class="label-font" for="first_name">First Name</label>
+							<input type="text" id="first_name" name="first_name" />
+							<!-- <span class="error_name"> This field is </span> -->
+						</div>
+						<div class="form-group">
+							<label class="label-font" for="last_name">Last Name</label>
+							<input type="text" id="last_name" name="last_name" />
+							<!-- <span class="error_last_name"> This field is </span> -->
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="label-font" for="email">Email Address</label>
+						<input type="email" id="email" name="email" />
+						<!-- <span class="error_email"> Please enter a valid email address</span> -->
+					</div>
+					<div class="form-group">
+						<label class="label-font" for="query-type">Query Type</label>
+						<div class="type-group">
+							<div class="radio">
+								<input type="radio" id="query-type" name="query-type" />General
+								Enquiry
+							</div>
+							<div class="radio">
+								<input type="radio" id="query-type" name="query-type" />Support
+								Request
+							</div>
+						</div>
+						<!-- <span class="error_query">Please select a query type</span> -->
+					</div>
+					<div class="form-group">
+						<label class="label-font" for="message">Message</label>
+						<textarea id="message" name="message"></textarea>
+						<!-- <span class="error_message">This field is </span> -->
+					</div>
+					<div class="form-group">
+						<input type="checkbox" id="checkbox" />I consent to being contacted
+						by the team
+						<br />
+						<!-- <span class="error_checkbox"
+							>To submit this form, please consent to being contacted</span
+						> -->
+					</div>
+					<div class="form-group">
+						<input type="button" id="submit" value="Submit" />
+					</div>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a
+					href="https://www.frontendmentor.io/profile/CurseTommy"
+					target="_blank"
+					>Tomasz</a
+				>.
+			</div>
+		</footer>
+		<script src="Script/script.js"></script>
+	</body>
+</html>
